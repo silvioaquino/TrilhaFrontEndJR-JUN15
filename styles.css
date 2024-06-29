@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #fff;  
+    color: #fff;  
+}
+
+/* ------------------------------------------- Corpo do Site ------------------------------------------- */
+.container {
+    width:1000px;
+    height:700px;
+    margin-top:0;
+    margin-left:auto;
+    margin-bottom:0;
+    margin-right:auto;
+    background-color:#666;
+}
+/* ------------------------------------------- Corpo Conteudo ------------------------------------------- */
+.content {
+    width:1000px;
+    height:700px;
+    background-color:#666;
+}
+/* ------------------------------------------- Lado Esquerdo ------------------------------------------- */
+.left-side {
+    width:300px;
+    height: 700px;
+    float:left;
+    background-color:#e53939;
+}
+img {
+    max-width: 50%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+#informacoes h2 {
+    color: #000000;
+    font-size: 2rem;
+    line-height: 20pt;
+}
+#social-link {
+    max-width: 20%;
+    max-height: 20%;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+/* ------------------------------------------- Lado Direito ------------------------------------------- */
+.right-side {
+    flex: 1;
+    width:700px;
+    height:700px;
+    float:left;
+    background-color:#000000;
+}
+#sobre {
+    margin-top: 50px;
+}
+header {
+    text-align: center;
+}
+h1 {
+    font-size: 3rem;
+}
+main {
+    padding: 10px 0;
+}
+section {
+    margin-bottom: 30px;
+    text-align: center;
+}
+h2 {
+    color: #e53939;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+/* ------------------------------------------- Footer ------------------------------------------- */
+.frames {
+    width:1000px;
+    height:30px;
+    background-color:#666;
+}
+.footer-left {
+    width: 300px;
+    height: 30px;
+    float: left;
+    background-color: #000000;
+}
+.footer-rigth {
+    width: 700px;
+    height: 30px;
+    float: left;
+    background-color: #e53939;
+    font-size: 10px;
+}
+/* ------------------------------------------- Animações ------------------------------------------- */
+.section-animated {
+    opacity: 1;
+}
+/* ------------------------------- Media queries para responsividade ------------------------------- */
+@media (max-width: 768px) {
+    .container {
+        width: 415px;
+    }
+    .content {
+        width: 415px;
+    }
+/* ------------- Lado Esquerdo -------------- */    
+    .left-side {
+        width: 120px;
+    }
+    img {
+        margin-top: 25px;
+    }
+    #informacoes h2 {
+        font-size: 1.2rem;
+    }
+    #informacoes p {
+        font-size: 0.6rem;
+    }
+    .social-link {
+        width: 75px;
+        margin-left: 25px;
+    }
+    #social-link {
+        max-width: 50%;
+        max-height: 50%;
+    }
+/* ------------- Lado Direito -------------- */
+    .right-side {
+        width: 295px;
+    }
+    .right-side h1 {
+        font-size: 1.5rem;
+    }
+    .right-side h2 {
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 0.9rem;
+        line-height: 1.1;
+    }
+/* ------------- Footer -------------- */
+    .frames {
+        /*Novamente definimos a largura da div*/
+      width:415px;
+    }
+    .footer-left {
+        width: 120px;
+    }
+    .footer-rigth {
+        width: 295px;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidatura - Codigo Certo Coders</title>
+    <link rel="stylesheet" href="styles5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> <!-- Animações CSS -->
+</head>
+<body>
+<div class="container">
+    <!--header class="frame"></header-->
+    <div class="content">
+        <header class="left-side">
+            <section id="foto" class="section-animated">
+                    <img src="foto-pessoal.jpeg" alt="Foto Pessoal" class="animate__animated animate__zoomIn">
+            </section>
+
+            <section id="informacoes" class="section-animated">
+                <h2 class="animate__animated animate__fadeInLeft">Informações Pessoais</h2>
+                <p class="animate__animated animate__fadeInLeft">41 anos, Casado, 1 filho </p>
+            </section>
+
+            <section class="social-link">
+                <a href="//www.google.com"><img src="github.png" id="social-link" class="animate__animated animate__zoomIn"></a>
+                <a href="//www.google.com"><img src="linkedin.png" id="social-link" class="animate__animated animate__zoomIn"></a>
+                <a href="//www.google.com"><img src="telefone.png" id="social-link" class="animate__animated animate__zoomIn"></a>  <a href="//www.google.com"><img src="zapp.png" id="social-link" class="animate__animated animate__zoomIn"></a>
+                <a href="//www.google.com"><img src="email.png" id="social-link" class="animate__animated animate__zoomIn"></a>
+            </section>
+        </header>
+        <main class="right-side">
+            <header>
+                <h1 class="animate__animated animate__fadeInDown">Silvio Silva de Aquino</h1>
+                <p>Front-End Developer - HTML | CSS | JavaScript | React</p>
+            </header>
+
+            <section id="sobre" class="section-animated">
+                    <h2 class="animate__animated animate__fadeInRight">Sobre</h2>
+                    <p class="animate__animated animate__fadeInRight">Estudante de Desenvolvemento Front-End apaixonado per tudo que faço. Busco oportunidades para expandir meu conhecimento em áreas como JavaScript, React e outros.</p>
+            </section>
+
+            <section id="gostos" class="section-animated">
+                    <h2 class="animate__animated animate__fadeInLeft">Gostos Pessoais</h2>
+                    <p class="animate__animated animate__fadeInLeft">Adoro ler ficção científica e documentarios, praticar esportes como ciclismo, futebol, trilha, e experimentar novos desafios.</p>
+            </section>
+
+            <section id="motivacoes" class="section-animated">
+                    <h2 class="animate__animated animate__fadeInRight">Motivações</h2>
+                    <p class="animate__animated animate__fadeInRight">Minha motivação para participar da comunidade Codigo Certo Coders vem da vontade de contribuir com projetos desafiadores que elevarão meus conhecimentos. Quero aprender com profissionais experientes e fazer essa troca experiencias.</p>
+            </section>
+        </main>
+    </div>
+    <footer class="frames">
+        <section class="footer-left"></section>
+        <section class="footer-rigth">&copy; 2024 Criado por Silvio Aquino</section>
+    </footer>
+</div>    
+
+<!-- Scripts para animações -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollify/1.0.19/jquery.scrollify.min.js"></script>
+<script>
+    $(function() {
+        $.scrollify({
+            section : ".section-animated",
+            setHeights: false,
+            updateHash: false,
+            easing: "easeOutExpo",
+        });
+    });
+</script>
+</body>
+</html>
